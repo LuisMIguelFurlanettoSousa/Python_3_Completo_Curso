@@ -42,7 +42,7 @@ Python é uma das linguagens mais versáteis e populares no mercado, sendo ampla
 Se você deseja discutir ou colaborar em projetos relacionados ao curso, fique à vontade para entrar em contato:
 
 - **Email**: [lfurlanettosousa@gmail.com](lfurlanettosousa@gmail.com)
-- **LinkedIn**: [Luis Miguel Furlanetto Sousa
+- **LinkedIn**: [www.linkedin.com/in/luis-miguel-furlanetto-sousa-127478297
 ](www.linkedin.com/in/luis-miguel-furlanetto-sousa-127478297)
 - **GitHub**: [LuisMIguelFurlanettoSousa]([https://github.com/](https://github.com/LuisMIguelFurlanettoSousa))
 

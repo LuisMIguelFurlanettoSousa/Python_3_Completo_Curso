@@ -20,8 +20,8 @@ Este curso tem como objetivo ensinar a linguagem Python de forma progressiva, de
 ## 📈 Meu Progresso
 Os tópicos estudados serão marcados e acompanhados ao longo do curso:
 
-- [ ] Introdução ao Python
-- [ ] Variáveis e Tipos de Dados
+- [x] Introdução ao Python
+- [x] Variáveis e Tipos de Dados
 - [ ] Estruturas Condicionais
 - [ ] Laços de Repetição
 - [ ] Funções

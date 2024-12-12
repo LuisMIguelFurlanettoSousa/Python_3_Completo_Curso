@@ -14,6 +14,7 @@ na palavra secreta.
 Faça a contagem de tentativas do seu
 usuário.
 """
+import os
 
 palavra_secreta = "abobora".lower()
 palavra_escondida = "*" * len(palavra_secreta)
@@ -42,8 +43,11 @@ while True:
     print(palavra_escondida)
 
     if palavra_escondida == palavra_secreta:
+        os.system('cls')
         print(
             "VC GANHOU PARABENS!!!\n"
             f"A palavra secreta era: {palavra_secreta}"
             )
-        
+        print(f"Numero de tentativas: {cont}")
+        palavra_escondida = "*" * len(palavra_secreta)
+        cont = 0

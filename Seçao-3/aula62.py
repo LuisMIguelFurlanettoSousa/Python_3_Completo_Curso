@@ -24,8 +24,22 @@ contrário disso:
 
 O segundo dígito do CPF é 0
 """
+import re
+import sys
+
 cpf = input()
-cpf_conta = cpf.replace('.', '').replace('-', '')
+
+cpf_conta = re.sub(
+    r"[^0-9]",
+    '',
+    cpf
+)
+
+if cpf[0] * len(cpf) == cpf:
+    print(f"CPF: {cpf} é invalido, dados sequeciais")
+    sys.exit()
+    
+
 numeros_1 = []
 
 for c in range(9):

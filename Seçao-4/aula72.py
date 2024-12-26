@@ -9,13 +9,14 @@ def multiplica(*args):
     total = 1
     for n in args:
         n = int(n)
+        if n == 0:
+            n = 1
         total *= n
         
     def par_impar(num):
         if num % 2 == 0:
             return "par"
-        else:
-            return "impar"
+        return "impar"
 
     numero = par_impar(total)
     return total, numero

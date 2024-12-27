@@ -1,6 +1,3 @@
-# Exercício - sistema de perguntas e respostas
-
-
 perguntas = [
     {
         'Pergunta': 'Quanto é 2+2?',
@@ -21,17 +18,27 @@ perguntas = [
 
 resp_acertadas = 0
 
-for i in range(0, len(perguntas)):
-    resp = ''
-    print(perguntas[i]["Pergunta"], end="\n\n")
+for pergunta in perguntas:
+    print(pergunta["Pergunta"], end="\n\n")
 
     print("Opções: ")
-    for i, v in enumerate(perguntas[i]["Opções"]):
-        print(f"{i}) {v}")
+    for i, opcao in enumerate(pergunta["Opções"]):
+        print(f"{i}) {opcao}")
 
-    resp = input("Escolha uma opçao: ")
+    resp = input("Escolha uma opção (digite o número): ")
 
-    if resp == perguntas[i]["Opções"].index(perguntas[i]["Opções"]):
-        resp_acertadas += 1
+    if resp.isdigit():
+        resp_int = int(resp)
+        if resp_int >= 0 and resp_int <= len(pergunta['Opções']):
 
-print(f"Voçê acertou {resp_acertadas} respostas")
+            if pergunta["Opções"][resp_int] == pergunta["Resposta"]:
+                print("Resposta correta!\n")
+                resp_acertadas += 1
+            else:
+                print("resposta errada!")
+        else:
+            print(f"Erro: {IndexError.__name__} detectado, Resposta errada!\n")
+    else:
+        print(f"Erro: {ValueError.__name__} detectado, Informe apenas numeros!!")
+
+print(f"Você acertou {resp_acertadas} respostas.")
